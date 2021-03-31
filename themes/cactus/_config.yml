@@ -122,7 +122,7 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: true
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
@@ -138,13 +138,13 @@ open_graph:
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
-  enabled: false
-  shortname: cactus-1
+  enabled: true
+  shortname: chivesworld
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
-  enabled: false
-  id: UA-86660611-1
+  enabled: true
+  id: G-TGQH14ZZ9Z
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
