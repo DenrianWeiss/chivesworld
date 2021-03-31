@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
+title: 韭色异想世界
+subtitle: Explorer of decentralized world.
+description: 
+keywords: blockchain, ethereum, cryptos
+author: Chives Head
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://chives.world
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
