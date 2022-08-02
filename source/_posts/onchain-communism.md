@@ -15,7 +15,8 @@ tags: solidity
 > We believe the Nomad team has misunderstood the issue.
 >> Quantumstamp
 
-显然， `Nomad` 项目方认为，攻击者无法找到空叶的原像，但问题在于，空叶**不是**哈希为空，而是内容为空。所以任何以空内容调用他们桥合约的 `proof` 都可以确认并更改状态，这使得他们的欺诈证明完全失效。  
+显然， `Nomad` 项目方认为，攻击者无法找到空叶的原像，但问题在于，空叶**不是**哈希为空，而是内容为空。所以任何以空内容调用他们桥合约的 `proof` 都可以确认并更改状态，这使得他们的欺诈证明完全失效。   
+但是这一问题本身不足以造成 Hack 发生。[合约](https://etherscan.io/address/0xb92336759618f55bd0f8313bd843604592e27bd8#code) 中的 `Replica.sol::44` 将 `messageHash` 映射到了 `message` 对应的状态树根，问题在于，以太坊中未初始化的map取出的值为0，而 `nomad` 项目方不幸的，把 `0x00` 设为了可接受的roothash。
 
 ## 简直像狂欢一样
 
